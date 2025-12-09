@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5 Contoh JavaScript Simpel</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        button {
+            background: #0770e7;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #3a0c91;
+        }
+        input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>5 Contoh Penggunaan JavaScript</h1>
+    <div class="box">
+        <h3>1. Alert</h3>
+        <button onclick="alert('Halo!')">Klik Saya</button>
+    </div>
+
+    <div class="box">
+        <h3>2. Ubah Teks</h3>
+        <p id="teks">Teks Awal</p>
+        <button onclick="document.getElementById('teks').innerHTML = 'Teks Berubah!'">Ubah</button>
+    </div>
+    <div class="box">
+        <h3>3. Penjumlahan</h3>
+        <input type="number" id="a"> + <input type="number" id="b">
+        <button onclick="document.getElementById('hasil').innerHTML = Number(document.getElementById('a').value) + Number(document.getElementById('b').value)">Hitung</button>
+        <p id="hasil" style="color: #4CAF50; font-weight: bold;"></p>
+    </div>
+    <div class="box">
+        <h3>4. Tampilkan Nama</h3>
+        <input type="text" id="nama" placeholder="Masukkan nama">
+        <button onclick="document.getElementById('sapa').innerHTML = 'Halo ' + document.getElementById('nama').value + '!'">Sapa</button>
+        <p id="sapa" style="color: #2196F3; font-weight: bold;"></p>
+    </div>
+    <div class="box">
+        <h3>5. Ubah Warna Background</h3>
+        <button onclick="document.body.style.backgroundColor = 'lightblue'">Biru</button>
+        <button onclick="document.body.style.backgroundColor = 'lightgreen'">Hijau</button>
+        <button onclick="document.body.style.backgroundColor = 'pink'">Pink</button>
+    </div>
+</body>
+</html>
